@@ -60,7 +60,7 @@ html {
     border: none;
     outline: none;
     cursor: pointer;
-    background: #383838;
+    background: var(--dark-clr);
     color: var(--text-white);
     text-transform: capitalize;
     font-size: 1.5rem;
@@ -94,7 +94,7 @@ html {
     padding: 0 1rem;
     margin: 0 .5rem;
     text-decoration: none;
-    color: #383838;
+    color: var(--dark-clr);
     opacity: 0.5;
     transition: .5s;
     font-size: 1.5rem;

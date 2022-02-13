@@ -1,5 +1,6 @@
 @import url(root.css);
 @import url(navbar.css);
+@import url(footer.css);
 
 /* Hero Section */
 .hero-section {
@@ -95,7 +96,8 @@
     text-transform: capitalize;
     border: none;
     outline: none;
-    background: var(--bg-white);
+    background: var(--dark-clr);
+    color: var(--text-white);
     border-radius: .5rem;
     transition: 0.5s ease-in;
     cursor: pointer;
