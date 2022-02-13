@@ -1,16 +1,16 @@
-const productContainers = [...document.querySelector('.product-container')];
-const previousBtn = [...document.querySelector('.previous-btn')];
-const nextBtn = [...document.querySelector('next-btn')];
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nextBtn = [...document.querySelectorAll('.next-btn')];
+const previousBtn = [...document.querySelectorAll('.previous-btn')];
 
 productContainers.forEach((item, i) => {
-    let containerDimenstions = item.getBoundingClientRect();
-    let containerWidth = containerDimenstions.width;
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
 
     nextBtn[i].addEventListener('click', () => {
         item.scrollLeft += containerWidth;
     })
 
-    previoustBtn[i].addEventListener('click', () => {
+    previousBtn[i].addEventListener('click', () => {
         item.scrollLeft -= containerWidth;
     })
 })
