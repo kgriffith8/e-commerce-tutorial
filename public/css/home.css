@@ -1,3 +1,4 @@
+@import url(root.css);
 @import url(navbar.css);
 
 /* Hero Section */
@@ -20,7 +21,7 @@
 .hero-section .sub-heading {
     margin-top: 1rem;
     text-align: center;
-    color: #ffffff;
+    color: var(--text-white);
     text-transform: capitalize;
     font-size: 3.5rem;
     font-weight: 300;
@@ -74,7 +75,7 @@
 
 .discount-tag {
     position: absolute;
-    background: #fff;
+    background: var(--bg-white);
     padding: .5rem;
     border-radius: .5rem;
     color: #ff7d7d;
@@ -94,7 +95,7 @@
     text-transform: capitalize;
     border: none;
     outline: none;
-    background: #fff;
+    background: var(--bg-white);
     border-radius: .5rem;
     transition: 0.5s ease-in;
     cursor: pointer;
@@ -170,4 +171,38 @@
 
 .previous-btn:hover img, .next-btn:hover img {
     opacity: 1;
+}
+
+/* Gallery / Collection */
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    text-align: center;
+    color: var(--text-white);
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 1rem;
 }
