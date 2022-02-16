@@ -79,7 +79,7 @@
     background: var(--bg-white);
     padding: .5rem;
     border-radius: .5rem;
-    color: #ff7d7d;
+    color: var(--text-red);
     top: 1rem;
     right: 1rem;
     font-size: 1.5rem;

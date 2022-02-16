@@ -1,5 +1,10 @@
 :root {
     --text-white: #fff;
+    --text-red: #ff7d7d;
     --bg-white: #fff;
     --dark-clr: #383838;
+}
+
+html {
+    font-size: 62.5%;
 }

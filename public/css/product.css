@@ -1,0 +1,139 @@
+@import url(root.css);
+
+.product-details {
+    width: 100%;
+    padding: 6rem 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-slider {
+    width: 50rem;
+    height: 50rem;
+    position: relative;
+    background-image: url('../img/product\ image\ 1.png');
+    background-size: cover;
+}
+
+.product-images {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: #fff;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 10rem;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.product-images img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.product-images img.active {
+    opacity: .5;
+}
+
+.details {
+    width: 50%;
+}
+
+.details .product-brand {
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+.details .product-short-desc {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    height: auto;
+    margin: 1.5rem 0 3rem;
+}
+
+.product-price {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.product-actual-price {
+    font-size: 3rem;
+    opacity: .5;
+    text-decoration: line-through;
+    margin: 0 2rem;
+    font-weight: 300;
+}
+
+.product-discount {
+    color: var(--text-red);
+    font-size: 2rem;
+}
+
+.product-sub-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 6rem 0 1rem;
+    font-weight: 300;
+}
+
+.size-radio-btn {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    font-size: 2rem;
+    border: .1rem solid var(--dark-clr);
+    border-radius: 50%;
+    margin: 1rem;
+    margin-left: 0;
+    line-height: 8rem;
+    text-transform: uppercase;
+    color: var(--dark-clr);
+    cursor: pointer;
+}
+
+.size-radio-btn.check {
+    background: var(--dark-clr);
+    color: var(--text-white);
+}
+
+.btn {
+    width: 48%;
+    padding: 2rem;
+    border-radius: .5rem;
+    background: none;
+    border: .1rem solid var(--dark-clr);
+    color: var(--dark-clr);
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 2rem 0;
+    text-transform: capitalize;
+}
+
+.cart-btn {
+    margin-right: 2%;
+    background: var(--dark-clr);
+    color: var(--text-white);
+}
+
+.detail-description {
+    padding: 0 10vw;
+    text-transform: capitalize;
+}
+
+.heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.description {
+    color: var(--dark-clr);
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
